@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#ffffff">
+  <title>Producten</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="producten" data-content="producten">
+  <a class="skip-link" href="#main">Sla navigatie over</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Naar home">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong data-bind="brand.name">HaarMonie Hairdesign</strong>
+          <span data-bind="brand.city">Baarn</span>
+        </div>
+      </a>
+
+      <nav class="nav" data-nav="desktop" aria-label="Hoofdnavigatie">
+        <!-- gevuld via JS -->
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn primary" data-bind="cta.primary" href="afspraak-maken.html">Afspraak maken</a>
+        <button class="burger" type="button" data-action="toggle-menu" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="mobile-nav" data-nav="mobile" aria-label="Mobiele navigatie">
+        <!-- gevuld via JS -->
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="title reveal" data-bind="page.title">Titel</h1>
+      <p class="subtitle reveal" data-bind="page.subtitle">Subtitel</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="card copy reveal">
+          <span class="badge">Merk</span>
+          <h2 class="h2" style="margin-top:12px" data-bind="products.brand.name">ALCINA</h2>
+          <p data-bind="products.brand.desc"></p>
+          <p class="sub" style="margin-top:12px" data-bind="products.brand.origin"></p>
+          <div style="margin-top:14px">
+            <a class="btn primary" data-bind="products.brand.link" href="#" target="_blank" rel="noopener">Bekijk ALCINA</a>
+          </div>
+        </div>
+        <div class="card reveal" style="padding:16px">
+          <div class="gallery" data-mount="products.images"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div data-bind="footer.note">HaarMonie Hairdesign · Baarn</div>
+        <div data-bind="footer.copy">© <span data-year></span> HaarMonie Hairdesign</div>
+      </div>
+      <div>
+        <a data-bind="footer.instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+</body>
+</html>

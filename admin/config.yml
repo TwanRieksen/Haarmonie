@@ -1,0 +1,236 @@
+backend:
+  name: github
+  repo: TwanRieksen/Haarmonie
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "site"
+    label: "Site instellingen"
+    files:
+      - file: "content/site.json"
+        label: "Algemeen"
+        name: "site"
+        format: "json"
+        fields:
+          - label: "Brand"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Naam", name: "name", widget: "string"}
+              - {label: "Stad", name: "city", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Adres", name: "address", widget: "string"}
+              - {label: "Telefoon (weergave)", name: "phone_display", widget: "string"}
+              - {label: "Telefoon link", name: "phone_link", widget: "string"}
+              - {label: "E-mail", name: "email", widget: "string"}
+              - {label: "Instagram handle", name: "instagram_handle", widget: "string"}
+              - {label: "Instagram URL", name: "instagram_url", widget: "string"}
+              - {label: "Boeking URL", name: "booking_url", widget: "string"}
+              - {label: "Google Maps URL", name: "maps_query_url", widget: "string"}
+          - label: "Openingstijden"
+            name: "opening_hours"
+            widget: "list"
+            fields:
+              - {label: "Dag", name: "day", widget: "string"}
+              - {label: "Tijd", name: "hours", widget: "string"}
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Site beschrijving", name: "site_description", widget: "text"}
+              - {label: "Theme color", name: "theme_color", widget: "string"}
+          - label: "UI"
+            name: "ui"
+            widget: "object"
+            fields:
+              - label: "Navigatie"
+                name: "nav"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+              - {label: "CTA label", name: "cta_primary_label", widget: "string"}
+              - {label: "CTA href", name: "cta_primary_href", widget: "string"}
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Footer note", name: "note", widget: "string"}
+              - {label: "Copyright", name: "copyright", widget: "string"}
+
+  - name: "pages"
+    label: "Pagina's"
+    files:
+      - file: "content/home.json"
+        label: "Home"
+        name: "home"
+        format: "json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Subtitel", name: "subtitle", widget: "text"}
+              - {label: "Primary knop label", name: "primary_button_label", widget: "string"}
+              - {label: "Primary knop URL", name: "primary_button_url", widget: "string"}
+              - {label: "Secondary knop label", name: "secondary_button_label", widget: "string"}
+              - {label: "Secondary knop URL", name: "secondary_button_url", widget: "string"}
+              - {label: "Hero afbeelding", name: "hero_image", widget: "image"}
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            summary: "{{fields.type}} — {{fields.title}}"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options: ["feature_grid", "highlight", "gallery"]
+              - {label: "Titel", name: "title", widget: "string", required: false}
+              - label: "Items (feature grid)"
+                name: "items"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - {label: "Tekst", name: "text", widget: "text"}
+              - {label: "Tekst (highlight)", name: "text", widget: "text", required: false}
+              - {label: "Knop label (highlight)", name: "button_label", widget: "string", required: false}
+              - {label: "Knop URL (highlight)", name: "button_url", widget: "string", required: false}
+              - {label: "Afbeelding (highlight)", name: "image", widget: "image", required: false}
+              - label: "Afbeeldingen (gallery)"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Bron", name: "src", widget: "image"}
+                  - {label: "Alt-tekst", name: "alt", widget: "string"}
+              - {label: "Notitie (gallery)", name: "note", widget: "string", required: false}
+
+      - file: "content/behandelingen.json"
+        label: "Behandelingen"
+        name: "behandelingen"
+        format: "json"
+        fields:
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Subtitel", name: "subtitle", widget: "text"}
+          - label: "Groepen"
+            name: "groups"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Naam", name: "name", widget: "string"}
+                  - {label: "Prijs", name: "price", widget: "string"}
+          - {label: "Notitie", name: "note", widget: "string", required: false}
+
+      - file: "content/afspraak.json"
+        label: "Afspraak maken"
+        name: "afspraak"
+        format: "json"
+        fields:
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Subtitel", name: "subtitle", widget: "text"}
+          - label: "Primary"
+            name: "primary"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+          - label: "Secondary"
+            name: "secondary"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+          - label: "Extra blokken"
+            name: "extra"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Tekst", name: "text", widget: "text"}
+
+      - file: "content/producten.json"
+        label: "Producten"
+        name: "producten"
+        format: "json"
+        fields:
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Subtitel", name: "subtitle", widget: "string"}
+          - label: "Merk"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Naam", name: "name", widget: "string"}
+              - {label: "Beschrijving", name: "description", widget: "text"}
+              - {label: "Herkomstnotitie", name: "origin_note", widget: "string"}
+              - {label: "Link label", name: "link_label", widget: "string"}
+              - {label: "Link URL", name: "link_url", widget: "string"}
+          - label: "Afbeeldingen"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: "Bron", name: "src", widget: "image"}
+              - {label: "Alt-tekst", name: "alt", widget: "string"}
+
+      - file: "content/team.json"
+        label: "Team"
+        name: "team"
+        format: "json"
+        fields:
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Subtitel", name: "subtitle", widget: "string"}
+          - label: "Teamleden"
+            name: "members"
+            widget: "list"
+            fields:
+              - {label: "Naam", name: "name", widget: "string"}
+              - {label: "Rol", name: "role", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "text"}
+              - {label: "Foto", name: "photo", widget: "image"}
+
+      - file: "content/contact.json"
+        label: "Contact"
+        name: "contact"
+        format: "json"
+        fields:
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Subtitel", name: "subtitle", widget: "string"}
+          - label: "Kaarten"
+            name: "cards"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Tekst", name: "text", widget: "text"}
+              - {label: "Link label", name: "link_label", widget: "string"}
+              - {label: "Link URL", name: "link_url", widget: "string"}
+          - label: "Formulier"
+            name: "form"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - label: "Velden"
+                name: "fields"
+                widget: "object"
+                fields:
+                  - {label: "Naam label", name: "name_label", widget: "string"}
+                  - {label: "E-mail label", name: "email_label", widget: "string"}
+                  - {label: "Bericht label", name: "message_label", widget: "string"}
+                  - {label: "Verstuur label", name: "submit_label", widget: "string"}

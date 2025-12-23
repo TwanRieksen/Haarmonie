@@ -1,0 +1,22 @@
+{
+  "title": "Afspraak maken",
+  "subtitle": "Plan eenvoudig online je afspraak of bel ons tijdens openingstijden.",
+  "primary": {
+    "label": "Online afspraak",
+    "url": "https://www.1kapper.nl/"
+  },
+  "secondary": {
+    "label": "Bel 035-5416517",
+    "url": "tel:+31355416517"
+  },
+  "extra": [
+    {
+      "title": "Voorkeur voor styliste?",
+      "text": "Geef het gerust aan bij het maken van je afspraak."
+    },
+    {
+      "title": "Bevestiging",
+      "text": "Na het boeken ontvang je doorgaans direct een bevestiging."
+    }
+  ]
+}

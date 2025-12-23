@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#ffffff">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home" data-content="home">
+  <a class="skip-link" href="#main">Sla navigatie over</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Naar home">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong data-bind="brand.name">HaarMonie Hairdesign</strong>
+          <span data-bind="brand.city">Baarn</span>
+        </div>
+      </a>
+
+      <nav class="nav" data-nav="desktop" aria-label="Hoofdnavigatie">
+        <!-- gevuld via JS -->
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn primary" data-bind="cta.primary" href="afspraak-maken.html">Afspraak maken</a>
+        <button class="burger" type="button" data-action="toggle-menu" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="mobile-nav" data-nav="mobile" aria-label="Mobiele navigatie">
+        <!-- gevuld via JS -->
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card hero-copy reveal">
+        <span class="eyebrow" data-bind="home.hero.eyebrow">Kapsalon in Baarn</span>
+        <h1 class="h1" data-bind="home.hero.title">HaarMonie Hairdesign</h1>
+        <p class="lead" data-bind="home.hero.subtitle">Knippen, kleuren en meer.</p>
+        <div class="hero-actions">
+          <a class="btn primary" data-bind="home.hero.primary" href="#">Online afspraak</a>
+          <a class="btn ghost" data-bind="home.hero.secondary" href="#">Bel ons</a>
+        </div>
+      </div>
+
+      <div class="hero-media card reveal" aria-label="Hero afbeelding">
+        <img data-bind="home.hero.image" src="assets/img/uploads/hero.jpg" alt="HaarMonie Hairdesign">
+      </div>
+    </div>
+  </section>
+
+  <div data-mount="home.sections"></div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div data-bind="footer.note">HaarMonie Hairdesign · Baarn</div>
+        <div data-bind="footer.copy">© <span data-year></span> HaarMonie Hairdesign</div>
+      </div>
+      <div>
+        <a data-bind="footer.instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#ffffff">
+  <title>Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact" data-content="contact">
+  <a class="skip-link" href="#main">Sla navigatie over</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Naar home">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong data-bind="brand.name">HaarMonie Hairdesign</strong>
+          <span data-bind="brand.city">Baarn</span>
+        </div>
+      </a>
+
+      <nav class="nav" data-nav="desktop" aria-label="Hoofdnavigatie">
+        <!-- gevuld via JS -->
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn primary" data-bind="cta.primary" href="afspraak-maken.html">Afspraak maken</a>
+        <button class="burger" type="button" data-action="toggle-menu" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="mobile-nav" data-nav="mobile" aria-label="Mobiele navigatie">
+        <!-- gevuld via JS -->
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="title reveal" data-bind="page.title">Titel</h1>
+      <p class="subtitle reveal" data-bind="page.subtitle">Subtitel</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cards" data-mount="contact.cards"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="card copy reveal">
+          <h2 class="h2" data-bind="form.title">Stuur een bericht</h2>
+          <p class="sub" style="margin-top:8px">Je ontvangt zo snel mogelijk reactie.</p>
+
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none">
+              <label>Laat dit leeg: <input name="bot-field"></label>
+            </p>
+
+            <div class="form">
+              <div class="field">
+                <label for="name" data-bind="form.name_label">Naam</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="email" data-bind="form.email_label">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="field" style="grid-column:1/-1">
+                <label for="message" data-bind="form.message_label">Bericht</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="actions">
+                <button class="btn primary" type="submit" data-bind="form.submit_label">Versturen</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="card reveal" style="padding:18px">
+          <div class="section-head" style="margin-bottom:10px">
+            <h2 class="h2">Openingstijden</h2>
+            <p class="sub">Actueel in CMS</p>
+          </div>
+          <table class="table" aria-label="Openingstijden">
+            <thead><tr><th>Dag</th><th>Tijd</th></tr></thead>
+            <tbody data-mount="opening-hours"></tbody>
+          </table>
+
+          <div style="margin-top:14px">
+            <a class="btn" href="afspraak-maken.html">Afspraak maken</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div data-bind="footer.note">HaarMonie Hairdesign · Baarn</div>
+        <div data-bind="footer.copy">© <span data-year></span> HaarMonie Hairdesign</div>
+      </div>
+      <div>
+        <a data-bind="footer.instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "eyebrow": "Kapsalon in Baarn",
+    "title": "HaarMonie Hairdesign",
+    "subtitle": "Knippen, kleuren en meer. Dames, heren en kinderen zijn welkom in onze gezellige kapsalon.",
+    "primary_button_label": "Online afspraak",
+    "primary_button_url": "https://www.1kapper.nl/",
+    "secondary_button_label": "Bel ons",
+    "secondary_button_url": "tel:+31355416517",
+    "hero_image": "assets/img/uploads/hero.jpg"
+  },
+  "sections": [
+    {
+      "type": "feature_grid",
+      "title": "Waar we voor staan",
+      "items": [
+        {
+          "title": "Persoonlijk advies",
+          "text": "We nemen de tijd voor jouw haarwensen en geven eerlijk advies."
+        },
+        {
+          "title": "Kleur & techniek",
+          "text": "Gespecialiseerd in kleuren, met vaktechnische vaardigheden en aandacht voor detail."
+        },
+        {
+          "title": "Warm & professioneel",
+          "text": "Een rustige, verzorgde sfeer waarin je met een glimlach naar buiten gaat."
+        }
+      ]
+    },
+    {
+      "type": "highlight",
+      "title": "Kleurbehandelingen",
+      "text": "Bij kleuren zijn we zeer gespecialiseerd. Door passie te combineren met goed opgeleide kleurspecialisten ben je bij ons aan het juiste adres voor een perfect kleurresultaat.",
+      "button_label": "Bekijk behandelingen",
+      "button_url": "behandelingen.html",
+      "image": "assets/img/uploads/highlight-color.jpg"
+    },
+    {
+      "type": "gallery",
+      "title": "Impressie",
+      "images": [
+        {
+          "src": "assets/img/uploads/gallery-01.jpg",
+          "alt": "Salon impressie 1"
+        },
+        {
+          "src": "assets/img/uploads/gallery-02.jpg",
+          "alt": "Salon impressie 2"
+        },
+        {
+          "src": "assets/img/uploads/gallery-03.jpg",
+          "alt": "Salon impressie 3"
+        },
+        {
+          "src": "assets/img/uploads/gallery-04.jpg",
+          "alt": "Salon impressie 4"
+        }
+      ],
+      "note": "Upload en beheer foto’s eenvoudig via het CMS."
+    }
+  ]
+}

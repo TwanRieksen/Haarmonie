@@ -1,0 +1,42 @@
+{
+  "title": "Team",
+  "subtitle": "Ons team bestaat uit kapsters met passie voor het vak.",
+  "members": [
+    {
+      "name": "Melissa",
+      "role": "Eigenaresse",
+      "bio": "Eigenaresse sinds 1 juli 2025 en al sinds 2010 werkzaam bij Haar-Monie.",
+      "photo": "assets/img/uploads/team-melissa.jpg"
+    },
+    {
+      "name": "Inge",
+      "role": "Top-Haarstyliste",
+      "bio": "Top-Haarstyliste, al 27 jaar werkzaam bij Haar-Monie.",
+      "photo": "assets/img/uploads/team-inge.jpg"
+    },
+    {
+      "name": "Merel",
+      "role": "Top-Haarstyliste",
+      "bio": "Top-Haarstyliste, ruim 3 jaar werkzaam bij Haar-Monie.",
+      "photo": "assets/img/uploads/team-merel.jpg"
+    },
+    {
+      "name": "Maria",
+      "role": "Hairstylist",
+      "bio": "Hairstylist uit Baarn.",
+      "photo": "assets/img/uploads/team-maria.jpg"
+    },
+    {
+      "name": "Ineke",
+      "role": "Hairstylist",
+      "bio": "Al 45 jaar Hairstylist en daarvan 29 jaar gewerkt als Hairstylist bij Kapsalon Liesbeth.",
+      "photo": "assets/img/uploads/team-ineke.jpg"
+    },
+    {
+      "name": "Manuela",
+      "role": "Oprichter",
+      "bio": "Heeft Haar-Monie in 1995 opgericht en heeft het in juli 2025 overgedragen aan Melissa.",
+      "photo": "assets/img/uploads/team-manuela.jpg"
+    }
+  ]
+}

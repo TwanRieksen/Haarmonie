@@ -1,0 +1,100 @@
+{
+  "intro": {
+    "title": "Behandelingen",
+    "subtitle": "Een selectie van onze behandelingen en ‘vanaf’-prijzen. Voor uitgebreid advies: neem contact op."
+  },
+  "groups": [
+    {
+      "title": "Dames",
+      "items": [
+        {
+          "name": "Wassen, knippen",
+          "price": "€ 36,50"
+        },
+        {
+          "name": "Wassen, knippen, drogen",
+          "price": "€ 42,40"
+        },
+        {
+          "name": "Wassen, knippen, stylen",
+          "price": "€ 47,25"
+        },
+        {
+          "name": "Wassen, knippen, föhnen",
+          "price": "€ 60,00"
+        },
+        {
+          "name": "Verven uitgroei (vanaf)",
+          "price": "€ 48,95"
+        },
+        {
+          "name": "Semipermanente kleurspoeling (vanaf)",
+          "price": "€ 44,90"
+        },
+        {
+          "name": "Highlights kam (vanaf)",
+          "price": "€ 38,90"
+        },
+        {
+          "name": "Folie High- of Lowlights",
+          "price": "In overleg (aantal)"
+        },
+        {
+          "name": "Wassen, föhnen (kort haar)",
+          "price": "€ 34,50"
+        },
+        {
+          "name": "Permanent incl. knippen en föhnen",
+          "price": "€ 133,50"
+        },
+        {
+          "name": "Headlines (excl. knippen en föhnen)",
+          "price": "€ 52,10"
+        },
+        {
+          "name": "Bruidskapsel",
+          "price": "In overleg"
+        },
+        {
+          "name": "Wassen, knippen (scholier/student)",
+          "price": "€ 31,50"
+        }
+      ]
+    },
+    {
+      "title": "Heren",
+      "items": [
+        {
+          "name": "Wassen, knippen",
+          "price": "€ 31,00"
+        },
+        {
+          "name": "Herenkleur L’Oréal 5 min (vanaf)",
+          "price": "€ 13,25"
+        },
+        {
+          "name": "Wassen, knippen (scholier/student)",
+          "price": "€ 25,75"
+        },
+        {
+          "name": "Wassen, knippen (Americans)",
+          "price": "€ 27,30"
+        }
+      ]
+    },
+    {
+      "title": "Kinderen t/m 12 jaar",
+      "items": [
+        {
+          "name": "Kids knippen",
+          "price": "€ 22,35"
+        },
+        {
+          "name": "Kids wassen, knippen",
+          "price": "€ 25,75"
+        }
+      ]
+    }
+  ],
+  "note": "Prijzen kunnen wijzigen. Vraag bij twijfel even na."
+}

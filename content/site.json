@@ -1,0 +1,77 @@
+{
+  "brand": {
+    "name": "HaarMonie Hairdesign",
+    "city": "Baarn",
+    "tagline": "Professionele haarstyling met oog voor kleur, vorm en verzorging."
+  },
+  "contact": {
+    "address": "Professor Krabbelaan 6A, 3741 EN Baarn, Nederland",
+    "phone_display": "035-5416517",
+    "phone_link": "tel:+31355416517",
+    "email": "haarmonie.hairdesign@gmail.com",
+    "instagram_handle": "@haarmonie_baarn",
+    "instagram_url": "https://www.instagram.com/haarmonie_baarn/",
+    "booking_url": "https://www.1kapper.nl/",
+    "maps_query_url": "https://www.google.com/maps/search/?api=1&query=Professor+Krabbelaan+6A%2C+3741+EN+Baarn"
+  },
+  "opening_hours": [
+    {
+      "day": "Dinsdag",
+      "hours": "09:00 – 17:30"
+    },
+    {
+      "day": "Woensdag",
+      "hours": "09:00 – 17:30"
+    },
+    {
+      "day": "Donderdag",
+      "hours": "09:00 – 17:30"
+    },
+    {
+      "day": "Vrijdag",
+      "hours": "09:00 – 17:30"
+    },
+    {
+      "day": "Zaterdag",
+      "hours": "08:00 – 15:00"
+    }
+  ],
+  "seo": {
+    "site_description": "Kapsalon in Baarn voor dames, heren en kinderen. Knippen, kleuren en meer. Maak online een afspraak of bel ons.",
+    "theme_color": "#f6f0e6"
+  },
+  "ui": {
+    "nav": [
+      {
+        "label": "Home",
+        "href": "index.html"
+      },
+      {
+        "label": "Behandelingen",
+        "href": "behandelingen.html"
+      },
+      {
+        "label": "Afspraak maken",
+        "href": "afspraak-maken.html"
+      },
+      {
+        "label": "Producten",
+        "href": "producten.html"
+      },
+      {
+        "label": "Team",
+        "href": "team.html"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html"
+      }
+    ],
+    "cta_primary_label": "Afspraak maken",
+    "cta_primary_href": "afspraak-maken.html"
+  },
+  "footer": {
+    "note": "HaarMonie Hairdesign · Baarn",
+    "copyright": "© 2025 HaarMonie Hairdesign"
+  }
+}

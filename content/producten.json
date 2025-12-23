@@ -1,0 +1,25 @@
+{
+  "title": "Producten",
+  "subtitle": "Wij werken met professionele producten van ALCINA.",
+  "brand": {
+    "name": "ALCINA",
+    "description": "ALCINA biedt een compleet assortiment verzorgingsproducten voor haar & huid. De producten zorgen voor een verzorgd uiterlijk en ondersteunen gezonde, kleurrijke accenten.",
+    "origin_note": "ALCINA kent haar oorsprong in Duitsland en staat voor kwaliteit.",
+    "link_label": "Bekijk ALCINA",
+    "link_url": "https://www.alcina.com/nl-nl"
+  },
+  "images": [
+    {
+      "src": "assets/img/uploads/alcina-01.jpg",
+      "alt": "ALCINA product 1"
+    },
+    {
+      "src": "assets/img/uploads/alcina-02.jpg",
+      "alt": "ALCINA product 2"
+    },
+    {
+      "src": "assets/img/uploads/alcina-03.jpg",
+      "alt": "ALCINA product 3"
+    }
+  ]
+}

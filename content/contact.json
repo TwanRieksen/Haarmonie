@@ -1,0 +1,34 @@
+{
+  "title": "Contact",
+  "subtitle": "Neem contact op voor vragen of advies.",
+  "cards": [
+    {
+      "title": "Adres",
+      "text": "Professor Krabbelaan 6A, 3741 EN Baarn, Nederland",
+      "link_label": "Open in Google Maps",
+      "link_url": "https://www.google.com/maps/search/?api=1&query=Professor+Krabbelaan+6A%2C+3741+EN+Baarn"
+    },
+    {
+      "title": "Telefoon",
+      "text": "035-5416517",
+      "link_label": "Bel direct",
+      "link_url": "tel:+31355416517"
+    },
+    {
+      "title": "E-mail",
+      "text": "haarmonie.hairdesign@gmail.com",
+      "link_label": "Mail ons",
+      "link_url": "mailto:haarmonie.hairdesign@gmail.com"
+    }
+  ],
+  "form": {
+    "title": "Stuur een bericht",
+    "success_message": "Bedankt. Je bericht is verstuurd.",
+    "fields": {
+      "name_label": "Naam",
+      "email_label": "E-mail",
+      "message_label": "Bericht",
+      "submit_label": "Versturen"
+    }
+  }
+}
